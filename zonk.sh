@@ -75,10 +75,10 @@ if [ $y == $bramka2 ]
 			then
 				odslonieta=$(( $RANDOM % 1+0 ))
 				if [ $odslonieta == $[0] ] 
-					then $odslonieta=$[1]
-				else $odslonieta=$[3]
+					then $odsl=$[1]
+				else $odsl=$[3]
 				fi
-			echo "w bramce nr $odslonieta jest ZONK"
+			echo "w bramce nr $odsl jest ZONK"
 			echo "**********************************"
 			echo "zmieniasz bramkę?"
 			select y in tak nie Quit
@@ -126,7 +126,7 @@ fi
 
 if [ $y == $bramka3 ]
 	then 
-		if [ $nagroda -eq $[3] ]
+		if [ $nagroda == $[3] ]
 			then
 				odslonieta=$(( $RANDOM % 2+1 ))
 			echo "w bramce nr $odslonieta jest ZONK"
