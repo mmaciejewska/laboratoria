@@ -25,6 +25,8 @@ if [ $y -eq $bramka1 ]
 			then
 				odslonieta=$[$(( $RANDOM % 2+1 ))+1]
 			echo "w bramce nr $odslonieta jest ZONK"
+			echo "**********************************"
+			echo "zmieniasz bramkę?"
 			select y in tak nie Quit
 			do
   			case $y in
@@ -39,6 +41,7 @@ if [ $y -eq $bramka1 ]
 			then
 			odslonieta=$[3]
 			echo "w bramce nr $odslonieta jest ZONK"
+			echo "**********************************"
 			echo "zmieniasz bramkę?"
 			select y in tak nie Quit
 				do
@@ -53,6 +56,7 @@ if [ $y -eq $bramka1 ]
 		if [ $nagroda == $[3] ]
 			then
 			echo "w bramce nr 2 jest ZONK"
+			echo "**********************************"
 			echo "zmieniasz bramkę?"
 			select y in tak nie Quit
 				do
@@ -75,6 +79,7 @@ if [ $y == $bramka2 ]
 				else $odslonieta=$[3]
 				fi
 			echo "w bramce nr $odslonieta jest ZONK"
+			echo "**********************************"
 			echo "zmieniasz bramkę?"
 			select y in tak nie Quit
 			do
@@ -90,6 +95,7 @@ if [ $y == $bramka2 ]
 			then
 			odslonieta=$[1]
 			echo "w bramce nr $odslonieta jest ZONK"
+			echo "**********************************"
 			echo "zmieniasz bramkę?"
 			select y in tak nie Quit
 				do
@@ -104,6 +110,7 @@ if [ $y == $bramka2 ]
 		if [ $nagroda == $[1] ]
 			then
 			echo "w bramce nr 3 jest ZONK"
+			echo "**********************************"
 			echo "zmieniasz bramkę?"
 			select y in tak nie Quit
 				do
@@ -123,6 +130,7 @@ if [ $y == $bramka3 ]
 			then
 				odslonieta=$(( $RANDOM % 2+1 ))
 			echo "w bramce nr $odslonieta jest ZONK"
+			echo "**********************************"
 			echo "zmieniasz bramkę?"
 			select y in tak nie Quit
 			do
@@ -138,6 +146,7 @@ if [ $y == $bramka3 ]
 			then
 			odslonieta=$[1]
 			echo "w bramce nr $odslonieta jest ZONK"
+			echo "**********************************"
 			echo "zmieniasz bramkę?"
 			select y in tak nie Quit
 				do
@@ -152,6 +161,7 @@ if [ $y == $bramka3 ]
 		if [ $nagroda == $[1] ]
 			then
 			echo "w bramce nr 2 jest ZONK"
+			echo "**********************************"
 			echo "zmieniasz bramkę?"
 			select y in tak nie Quit
 				do
