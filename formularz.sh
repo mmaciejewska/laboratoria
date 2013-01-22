@@ -4,7 +4,7 @@ i=$[1]
 while [ $i == 1 ]; do
 
 echo 'O której godzinie powinieneś jeść posiłki?'
-echo 'śniadanko o:${edn_color'
+echo 'śniadanko o:'
 read sniadanie
 echo 'drugie śniadanie o:'
 read dsniadanie
